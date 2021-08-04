@@ -21,6 +21,8 @@ h1:first-child{
     padding-bottom: 0.5em;
 }
 .main-con{
+    display: flex;
+    flex-direction: column;
     font-style: italic;
     border-top: 5px double black ;
     border-bottom:5px double black ;
@@ -28,6 +30,10 @@ h1:first-child{
     border-right: none;
     border-left: none;
 
+}
+.flex-pairs{
+  display: flex;
+  flex-direction: column;  
 }
 #nd-form{
     font-style: italic;
@@ -51,7 +57,6 @@ select {
   border: none;
   margin-top: 1em;
   padding: 15px;
-  width:100%;
   background-color: rgb(222, 224, 226);
   color:rgb(4, 1, 17);
   margin-bottom: 30px;
@@ -60,20 +65,19 @@ textarea{
     border: none;
     margin-top: 1em;
     padding: 15px;
-    width:100%;
     background-color: rgb(222, 224, 226);
     color:rgb(4, 1, 17);
     margin-bottom: 30px;
     padding: 35px;
+    width:100% ;
 }
-input[type="number"]{
+#zip{
     margin-top: 1em;
     padding: 15px;
     margin-bottom: 1em;
-    width:50%;
-    background-color: rgb(224, 225, 226);
-    color: white;
+    color: black;
     border: none;
+    margin-left:-1em ;
 }
 h2{
     margin-top: 1em;
@@ -84,20 +88,35 @@ input[type="checkbox"]{
 }
 button[type="submit"] {
     font-size: 1.5em;
-    width:100%;
     padding: 20px;
     background-color: rgb(120, 245, 193);
     color: rgb(255, 251, 248);
     border-radius: 5%;
     text-align: center;
     margin-bottom: 0%;
-
+    margin: 0 auto;
+    width: 100%;
 }
 footer{
 
     text-align: center;
 }
 @media screen and (min-width:769px) {
+    .flex-pairs{
+        display: block;
+    }
+    .container{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .flex-pairs label{
+        margin-right:30px ;
+    }
+    .flex-pairs input{
+        width:75%;
+    }
+
+
 }
 
 
