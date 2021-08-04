@@ -9,9 +9,7 @@ body{
 header{
     text-align: center;
     margin-top: 0%;
-    margin-left: 0%;
-    margin-right: -4em;
-    
+    margin-left: 0%; 
 }
 h1:first-child{
     font-weight: 400;
@@ -42,7 +40,6 @@ h1:first-child{
 }
 form{
     align-self: center;
-    max-width:400px;
     padding:0;
 }
 
@@ -54,7 +51,7 @@ select {
   border: none;
   margin-top: 1em;
   padding: 15px;
-  width: 400px;
+  width:100%;
   background-color: rgb(222, 224, 226);
   color:rgb(4, 1, 17);
   margin-bottom: 30px;
@@ -63,7 +60,7 @@ textarea{
     border: none;
     margin-top: 1em;
     padding: 15px;
-    width: 400px;
+    width:100%;
     background-color: rgb(222, 224, 226);
     color:rgb(4, 1, 17);
     margin-bottom: 30px;
@@ -73,7 +70,7 @@ input[type="number"]{
     margin-top: 1em;
     padding: 15px;
     margin-bottom: 1em;
-    width: 200px;
+    width:50%;
     background-color: rgb(224, 225, 226);
     color: white;
     border: none;
@@ -87,7 +84,7 @@ input[type="checkbox"]{
 }
 button[type="submit"] {
     font-size: 1.5em;
-    width:400px;
+    width:100%;
     padding: 20px;
     background-color: rgb(120, 245, 193);
     color: rgb(255, 251, 248);
@@ -97,7 +94,7 @@ button[type="submit"] {
 
 }
 footer{
-    margin-top: -1em;
+
     text-align: center;
 }
 @media screen and (min-width:769px) {
